@@ -51,7 +51,7 @@
                 @endphp
                 @foreach ($data as $index => $row)
                     <tr>
-                        <th scope="row">{{ $data as $index => $row }}</th>
+                        <th scope="row">{{ $index + $data->firstitem() }}</th>
                         <td>{{ $row->nama }}</td>
                         <td>{{ $row->jeniskelamin }}</td>
                         <td>0{{ $row->notelpon }}</td>
